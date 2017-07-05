@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.beafk.firebasetest.MainActivity">
+
+    <item android:id="@+id/menu_connect_bt" android:title="@string/connectbt"/>
+
+
+</menu>

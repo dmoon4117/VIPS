@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "788392012659",
+    "firebase_url": "https://fireksh-59651.firebaseio.com",
+    "project_id": "fireksh-59651",
+    "storage_bucket": "fireksh-59651.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:788392012659:android:586efb45844507e9",
+        "android_client_info": {
+          "package_name": "com.example.beafk.firebasetest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "788392012659-tltrq249230lsbh95u5hu601mdla5jld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjos9X2lSBRw5q-zdvia4w0bGUcL1ClN0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "788392012659-tltrq249230lsbh95u5hu601mdla5jld.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

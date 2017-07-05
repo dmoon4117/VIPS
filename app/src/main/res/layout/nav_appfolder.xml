@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appfolder"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#696969"
+    tools:context="com.example.beafk.firebasetest.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="400px"
+        android:gravity="center"
+        android:layout_width="wrap_content">
+
+                <FrameLayout
+                    android:paddingTop="25px"
+                    android:layout_width="250px"
+                    android:layout_height="300px">
+
+                    <ImageView
+                        android:layout_marginLeft="25px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:id="@+id/navicon1"
+                        android:layout_weight="1"
+                        android:src="@drawable/gim"
+                        />
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="250px">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:text="김기사 "
+                            android:layout_alignBottom="@id/navicon1"
+                            android:layout_alignLeft="@id/navicon1"
+                            android:layout_alignRight="@id/navicon1"
+                            android:layout_alignTop="@id/navicon1"
+                            android:gravity="bottom|center"
+                            android:textStyle="bold"
+                            android:id="@+id/navname1"
+                            android:textSize="16dp"
+                            android:layout_weight="2" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="250px"
+                    android:layout_height="300px"
+                    android:paddingTop="50px">
+
+                    <ImageView
+                        android:layout_marginLeft="25px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:id="@+id/navicon3"
+                        android:layout_weight="1"
+                        android:src="@drawable/atl"
+                        />
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="250px">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="200px"
+                            android:text="아틀란 "
+                            android:layout_alignBottom="@id/navicon3"
+                            android:layout_alignLeft="@id/navicon3"
+                            android:layout_alignRight="@id/navicon3"
+                            android:layout_alignTop="@id/navicon3"
+                            android:gravity="bottom|center"
+                            android:textStyle="bold"
+                            android:id="@+id/navname3"
+                            android:textSize="16dp"
+
+                            android:layout_weight="2" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:paddingTop="25px"
+                    android:layout_width="250px"
+                    android:layout_height="300px">
+
+                    <ImageView
+                        android:layout_marginLeft="25px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:id="@+id/navicon2"
+                        android:layout_weight="1"
+                        android:src="@drawable/tmap"
+                        />
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="250px">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="T-map "
+                            android:layout_alignBottom="@id/navicon2"
+                            android:layout_alignLeft="@id/navicon2"
+                            android:layout_alignRight="@id/navicon2"
+                            android:layout_alignTop="@id/navicon2"
+                            android:gravity="bottom|center"
+                            android:textStyle="bold"
+                            android:id="@+id/navname2"
+                            android:textSize="16dp"
+
+                            android:layout_weight="2" />
+
+                    </LinearLayout>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:paddingTop="50px"
+                    android:layout_width="250px"
+                    android:layout_height="300px">
+
+                    <ImageView
+                        android:layout_marginLeft="25px"
+                        android:layout_width="200px"
+                        android:layout_height="200px"
+                        android:id="@+id/navicon4"
+                        android:layout_weight="1"
+                        android:src="@drawable/inavi"
+                        />
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="250px">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="아이나비 "
+                            android:layout_alignBottom="@id/navicon4"
+                            android:layout_alignLeft="@id/navicon4"
+                            android:layout_alignRight="@id/navicon4"
+                            android:layout_alignTop="@id/navicon4"
+                            android:gravity="bottom|center"
+                            android:textStyle="bold"
+                            android:id="@+id/navname4"
+                            android:textSize="16dp"
+
+                            android:layout_weight="2" />
+
+                    </LinearLayout>
+                </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

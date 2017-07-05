@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:id="@+id/nav_icon"
+                android:onClick="navClick"
+                android:layout_weight="1"/>
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="   내비게이션"
+                    android:paddingBottom="10dp"
+                    android:layout_alignBottom="@id/nav_icon"
+                    android:layout_alignLeft="@id/nav_icon"
+                    android:layout_alignRight="@id/nav_icon"
+                    android:layout_alignTop="@id/nav_icon"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    android:id="@+id/nav_name"
+                    android:textSize="16dp"
+
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="30dp"
+            android:paddingLeft="8dp"
+            android:text="New Text"
+            android:id="@+id/nav_sub1"
+            android:textSize="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="2" />
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="30dp"
+            android:paddingLeft="8dp"
+            android:text="New Text"
+            android:id="@+id/nav_sub2"
+            android:textSize="10dp"
+            android:gravity="center_vertical"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+</LinearLayout>

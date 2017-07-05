@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+   >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_height="350dp"
+        android:layout_width="500dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="기존회원"
+            android:textSize="10dp"
+            android:gravity="center_vertical"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="기존회원이시군요 다시 찾아주셔서 감사합니다."
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="회원님의 ID찾기"
+            android:textSize="20dp"
+            android:gravity="center_vertical"
+             />
+
+        <ListView
+        android:id="@+id/userlist"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        </ListView>
+
+        <TextView
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="리스트에서 본인을 선택 한 후 login 버튼을 눌러 주세요"
+            android:textSize="15dp"
+            android:gravity="center_vertical|right"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCDCDC"
+    tools:context="com.example.beafk.firebasetest.login.preMainActivity">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="400dp"
+            android:layout_width="match_parent">
+
+            <TableLayout
+
+                android:layout_width="150dp"
+                android:layout_height="220dp">
+
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="220dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:onClick="new_memberClick"
+                            android:id="@+id/new_member"
+                            android:layout_weight="1"
+                            android:src="@drawable/new_person"
+                            />
+                        <LinearLayout
+
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"
+                                android:text="신규회원 "
+                                android:layout_alignBottom="@id/new_member"
+                                android:layout_alignLeft="@id/new_member"
+                                android:layout_alignRight="@id/new_member"
+                                android:layout_alignTop="@id/new_member"
+                                android:gravity="bottom|right"
+                                android:textStyle="bold"
+                                android:id="@+id/new_member_text"
+                                android:textSize="30dp"
+                                android:layout_weight="2" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_marginLeft="300dp"
+                android:layout_width="150dp"
+                android:layout_height="220dp">
+
+                <TableRow>
+                    <FrameLayout
+                        android:layout_width="150dp"
+                        android:layout_height="220dp">
+
+                        <ImageView
+                            android:layout_width="150dp"
+                            android:layout_height="200dp"
+                            android:onClick="existing_memberClick"
+                            android:id="@+id/existing_member"
+                            android:layout_weight="1"
+                            android:src="@drawable/exist"
+                            />
+                        <LinearLayout
+
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="220dp"
+                                android:text="기존회원"
+                                android:layout_alignBottom="@id/existing_member"
+                                android:layout_alignLeft="@id/existing_member"
+                                android:layout_alignRight="@id/existing_member"
+                                android:layout_alignTop="@id/existing_member"
+                                android:gravity="bottom|center_horizontal"
+                                android:textStyle="bold"
+                                android:id="@+id/existing_member_text"
+                                android:textSize="30dp"
+
+                                android:layout_weight="2" />
+
+                        </LinearLayout>
+                    </FrameLayout>
+                </TableRow>
+
+            </TableLayout>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="4">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:id="@+id/icon"
+                android:onClick="addapp_Click2"
+                android:layout_weight="1"
+                />
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text=""
+                    android:layout_alignBottom="@id/icon"
+                    android:layout_alignLeft="@id/icon"
+                    android:layout_alignRight="@id/icon"
+                    android:layout_alignTop="@id/icon"
+                    android:gravity="bottom|left"
+                    android:textStyle="bold"
+                    android:id="@+id/name"
+                    android:textSize="16dp"
+
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <TextView
+            android:background="@drawable/round_btn"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/title"
+            android:textSize="12dp"
+            android:onClick="addapp2_delete"
+            android:gravity="center"
+            android:layout_weight="2" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/new_member"
+    android:background="#DCDCDC"
+
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_height="350dp"
+        android:layout_width="500dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="신규회원"
+            android:textSize="10dp"
+            android:gravity="center_vertical"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="신규회원이시군요 저희 제품에 등록해 주셔서 감사합니다."
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="회원님의 성명을 입력해 주세요"
+            android:textSize="25dp"
+            android:gravity="center_vertical"
+           />
+
+
+        <FrameLayout
+            android:layout_width="500dp"
+            android:layout_height="50dp">
+
+            <EditText
+                android:layout_marginLeft="80dp"
+                android:id="@+id/name_insert"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:ems="17"
+                android:inputType="textPersonName"
+                android:textSize="20dp"
+                android:text=""
+                android:textStyle="bold"/>
+            <LinearLayout
+
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="성명 : "
+                    android:layout_alignBottom="@id/name_insert"
+                    android:layout_alignLeft="@id/name_insert"
+                    android:layout_alignRight="@id/name_insert"
+                    android:layout_alignTop="@id/name_insert"
+                    android:gravity="center_vertical|left"
+                    android:textStyle="bold"
+                    android:id="@+id/nametext"
+                    android:textSize="30dp"
+                    android:layout_weight="2" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:paddingRight="25dp"
+            android:layout_width="500dp"
+            android:layout_height="100dp"
+            >
+            <Button
+                    android:layout_gravity="center_vertical|right"
+                    android:onClick="id_generate"
+                    android:id="@+id/id_btn"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                android:background="@drawable/round_btn"
+                    android:text="ID생성" />
+
+        </FrameLayout>
+
+        <TextView
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="성명입력과 생성된 ID를 입력 후 login 버튼을 눌러 주세요"
+            android:textSize="15dp"
+            android:gravity="center_vertical|right"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

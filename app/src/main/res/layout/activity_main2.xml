@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    android:background="#DCDCDC"
+    tools:context="com.example.beafk.firebasetest.MainActivity"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginLeft="75dp"
+        android:layout_height="match_parent"
+        android:layout_width="685dp"
+        android:layout_gravity="right">
+
+        <TableLayout
+            android:layout_height="match_parent"
+            android:paddingTop="50dp"
+            android:layout_width="150dp">
+
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ListView
+                    android:id="@+id/listview1"
+                    android:divider="#ffffff"
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                </ListView>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_height="match_parent"
+            android:layout_marginLeft="75dp"
+            android:paddingTop="50dp"
+            android:layout_width="150dp">
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ListView
+                    android:id="@+id/listview3"
+                    android:divider="#ffffff"
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                </ListView>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ListView
+                        android:id="@+id/listview2"
+                        android:divider="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                    </ListView>
+
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <ImageButton
+                            android:layout_marginTop="25dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:id="@+id/imageButton1"
+                            android:padding="0dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/plus_icon"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+
+            </TableRow>
+
+
+        </TableLayout>
+
+        <TableLayout
+            android:layout_height="match_parent"
+            android:layout_marginLeft="75dp"
+            android:paddingTop="50dp"
+            android:layout_width="200dp">
+            <TableRow
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
+
+                <ListView
+                    android:id="@+id/listview5"
+                    android:divider="#ffffff"
+                    android:paddingTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+                </ListView>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_marginTop="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <ListView
+                        android:id="@+id/listview4"
+                        android:divider="#ffffff"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+                    </ListView>
+
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp">
+
+                        <ImageButton
+                            android:layout_marginTop="25dp"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:id="@+id/imageButton2"
+                            android:padding="0dp"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/plus_icon"
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        >
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="45sp"
+            android:background="#AA808080"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        <TableLayout
+            android:paddingTop="50dp"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Side">
+
+            <TableRow>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/YMD"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="20dp"
+                    android:text="2017년 3월 17일"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/Time"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textSize="25dp"
+                    android:text="오전 7:00"/>
+            </TableRow>
+            <!--fhkljdhjhljkfhs!-->
+            <TableRow>
+                <FrameLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="160dp">
+
+                    <ImageView
+                        android:layout_width="200dp"
+                        android:layout_height="160dp"
+                        android:id="@+id/speed_cir"
+                        android:layout_weight="1"
+                        android:src="@drawable/speed_cir"/>
+
+                    <ProgressBar
+                        android:id="@+id/main_progressBar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="200dp"
+                        android:layout_height="160dp"
+                        android:layout_gravity="center_horizontal"
+                        android:indeterminate="false"
+                        android:max="240"
+                        android:progressDrawable="@drawable/circular_progress_bar"
+                        />
+
+                    <LinearLayout
+
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="100 km"
+                            android:layout_alignBottom="@id/speed_cir"
+                            android:layout_alignLeft="@id/speed_cir"
+                            android:layout_alignRight="@id/speed_cir"
+                            android:layout_alignTop="@id/speed_cir"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/speed"
+                            android:textSize="30dp"
+                            android:layout_weight="2" />
+
+                    </LinearLayout>
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow>
+                <FrameLayout
+                    android:layout_marginTop="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp">
+                </FrameLayout>
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

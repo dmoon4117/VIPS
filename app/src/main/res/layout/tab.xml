@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:background="@drawable/analbk"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:background="#AA808080"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:paddingTop="50dp"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tabview1">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+                    <TableLayout
+                            android:layout_height="230dp"
+                            android:layout_width="200dp">
+                            <TableRow
+                                android:layout_height="100dp"
+                                android:layout_width="200dp"
+                                >
+                                <FrameLayout
+                                    android:background="@drawable/row1"
+                                    android:layout_height="100dp"
+                                    android:layout_width="200dp">
+                                    <TextView
+
+                                        android:id="@+id/text_engene_load"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left|center_vertical"
+                                        android:textSize="15dp"
+                                        android:text="엔진 부하율" />
+                                    <TextView
+                                        android:id="@+id/engene_load"
+                                        android:layout_marginTop="30dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="35dp"
+                                        android:text="0 %" />
+                                </FrameLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginTop="30dp"
+                                android:layout_height="100dp"
+                                android:background="#AAFFDD33"
+                                android:layout_width="match_parent">
+                                <FrameLayout
+                                    android:background="@drawable/row2"
+                                    android:layout_height="100dp"
+                                    android:layout_width="250dp">
+                                    <TextView
+                                        android:id="@+id/text_cur_speed"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left|center_vertical"
+                                        android:textSize="15dp"
+                                        android:text="속력" />
+                                    <TextView
+                                        android:id="@+id/cur_speed"
+                                        android:layout_marginTop="30dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="35dp"
+                                        android:text="0 km/h" />
+                                </FrameLayout>
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout
+                            android:paddingLeft="50dp"
+                            android:layout_height="230dp"
+                            android:layout_width="250dp">
+                            <TableRow
+                                android:layout_height="100dp"
+                                android:background="#AA66CC00"
+                                android:layout_width="match_parent">
+                                <FrameLayout
+                                    android:background="@drawable/row1"
+                                    android:layout_height="100dp"
+                                    android:layout_width="250dp">
+                                    <TextView
+                                        android:id="@+id/text_air_intake"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left|center_vertical"
+                                        android:textSize="15dp"
+                                        android:text="엔진 흡기온도" />
+                                    <TextView
+                                        android:id="@+id/air_intake"
+                                        android:layout_marginTop="30dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="35dp"
+                                        android:text="0 ℃" />
+                                </FrameLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginTop="30dp"
+                                android:layout_height="100dp"
+                                android:background="#AAFFDD33"
+                                android:layout_width="match_parent">
+                                <FrameLayout
+                                    android:background="@drawable/row2"
+                                    android:layout_height="100dp"
+                                    android:layout_width="250dp">
+                                    <TextView
+                                        android:id="@+id/text_RPM"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left|center_vertical"
+                                        android:textSize="15dp"
+                                        android:text="RPM" />
+                                    <TextView
+                                        android:id="@+id/RPM"
+                                        android:layout_marginTop="30dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="35dp"
+                                        android:text="0 RPM" />
+                                </FrameLayout>
+                            </TableRow>
+                        </TableLayout>
+
+                        <TableLayout
+                            android:paddingLeft="50dp"
+                            android:layout_height="230dp"
+                            android:layout_width="250dp">
+                            <TableRow
+                                android:layout_height="100dp"
+                                android:background="#AA66CC00"
+                                android:layout_width="match_parent">
+                                <FrameLayout
+                                    android:background="@drawable/row1"
+                                    android:layout_height="100dp"
+                                    android:layout_width="250dp">
+                                    <TextView
+                                        android:id="@+id/text_cooling_water"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left|center_vertical"
+                                        android:textSize="15dp"
+                                        android:text="엔진 온도" />
+                                    <TextView
+                                        android:id="@+id/cooling_water"
+                                        android:layout_marginTop="30dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="35dp"
+                                        android:text="0 ℃" />
+                                </FrameLayout>
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_marginTop="30dp"
+                                android:layout_height="100dp"
+                                android:background="#AAFFDD33"
+                                android:layout_width="match_parent">
+                                <FrameLayout
+                                    android:background="@drawable/row2"
+                                    android:layout_height="100dp"
+                                    android:layout_width="250dp">
+                                    <TextView
+                                        android:id="@+id/text_volt"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="30dp"
+                                        android:layout_weight="1"
+                                        android:gravity="left|center_vertical"
+                                        android:textSize="15dp"
+                                        android:text="배터리 전압" />
+                                    <TextView
+                                        android:id="@+id/volt"
+                                        android:layout_marginTop="30dp"
+                                        android:paddingLeft="10dp"
+                                        android:layout_width="200dp"
+                                        android:layout_height="50dp"
+                                        android:layout_weight="1"
+                                        android:gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="35dp"
+                                        android:text="0 V" />
+                                </FrameLayout>
+                            </TableRow>
+                        </TableLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="30dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <FrameLayout
+                        android:id="@+id/realresult"
+                        android:background="#AA0033CC"
+                        android:layout_height="100dp"
+                        android:layout_width="700dp">
+                        <TextView
+                            android:id="@+id/text_result"
+                            android:paddingLeft="10dp"
+                            android:layout_width="700dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="30dp"
+                            android:text="블루투스 연결이 정상적입니다" />
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/tabview2">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="230dp">
+                    <TableLayout
+                        android:layout_height="230dp"
+                        android:layout_width="300dp">
+                        <TableRow
+                            android:layout_height="100dp"
+                            android:background="#AA66CC00"
+                            android:layout_width="300dp">
+                            <FrameLayout
+                                android:background="@drawable/row1"
+                                android:layout_height="100dp"
+                                android:layout_width="300dp">
+                                <TextView
+                                    android:id="@+id/text_week_afe"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="200dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left|center_vertical"
+                                    android:textSize="15dp"
+                                    android:text="누적 평균 연비" />
+                                <TextView
+                                    android:id="@+id/week_afe"
+                                    android:layout_marginTop="30dp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="35dp"
+                                    android:text="15 km/l" />
+                            </FrameLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="30dp"
+                            android:layout_height="100dp"
+                            android:background="#AAFFDD33"
+                            android:layout_width="match_parent">
+                            <FrameLayout
+                                android:background="@drawable/row2"
+                                android:layout_height="100dp"
+                                android:layout_width="300dp">
+                                <TextView
+                                    android:id="@+id/text_week_av"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left|center_vertical"
+                                    android:textSize="15dp"
+                                    android:text="누적 평균 주행속도" />
+                                <TextView
+                                    android:id="@+id/week_av"
+                                    android:layout_marginTop="30dp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="35dp"
+                                    android:text="0 km/h" />
+                            </FrameLayout>
+                        </TableRow>
+                    </TableLayout>
+
+                    <TableLayout
+                        android:paddingLeft="50dp"
+                        android:layout_height="230dp"
+                        android:layout_width="350dp">
+                        <TableRow
+                            android:layout_height="100dp"
+                            android:background="#AA66CC00"
+                            android:layout_width="match_parent">
+                            <FrameLayout
+                                android:background="@drawable/row1"
+                                android:layout_height="100dp"
+                                android:layout_width="350dp">
+                                <TextView
+                                    android:id="@+id/text_week_run_time"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="200dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left|center_vertical"
+                                    android:textSize="15dp"
+                                    android:text="누적 주행시간" />
+                                <TextView
+                                    android:id="@+id/week_run_time"
+                                    android:layout_marginTop="30dp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="35dp"
+                                    android:text="01:23:23" />
+                            </FrameLayout>
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_marginTop="30dp"
+                            android:layout_height="100dp"
+                            android:background="#AAFFDD33"
+                            android:layout_width="match_parent">
+                            <FrameLayout
+                                android:background="@drawable/row2"
+                                android:layout_height="100dp"
+                                android:layout_width="350dp">
+                                <TextView
+                                    android:id="@+id/text_week_run_distance"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="200dp"
+                                    android:layout_height="30dp"
+                                    android:layout_weight="1"
+                                    android:gravity="left|center_vertical"
+                                    android:textSize="15dp"
+                                    android:text="누적 주행거리" />
+                                <TextView
+                                    android:id="@+id/week_run_distance"
+                                    android:layout_marginTop="30dp"
+                                    android:paddingLeft="10dp"
+                                    android:layout_width="300dp"
+                                    android:layout_height="50dp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:textStyle="bold"
+                                    android:textSize="35dp"
+                                    android:text="283 km" />
+                            </FrameLayout>
+                        </TableRow>
+                    </TableLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:paddingTop="30dp"
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp">
+
+                    <FrameLayout
+                        android:id="@+id/savingresult"
+                        android:background="#AA0033CC"
+                        android:layout_height="100dp"
+                        android:layout_width="650dp">
+                        <TextView
+                            android:id="@+id/text_consume_fuel"
+                            android:paddingLeft="10dp"
+                            android:layout_width="650dp"
+                            android:layout_height="100dp"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:textSize="30dp"
+                            android:text="주간 34 L의 연료를 사용하셨습니다" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
